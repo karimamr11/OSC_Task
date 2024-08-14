@@ -1,0 +1,14 @@
+mkdir karim
+touch karim/one.txt karim/two.txt karim/three.txt karim/four.txt
+mkdir karim/BAD
+touch karim/BAD/bad.txt
+mv karim/one.txt /home/osc
+mv one.txt Downloads 
+cd Downloads 
+cp one.txt copy.txt
+cd /home/osc/karim
+nano two.txt
+echo 1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC
+mv three.txt hello.txt 
+rm four.txt
+rm -r BAD 
