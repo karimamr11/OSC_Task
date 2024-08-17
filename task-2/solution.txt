@@ -1,6 +1,5 @@
 git config --global user.name karimamr11
 git config --global user.email karimamr20055@gmail.com
-cd 
 git clone https://github.com/karimamr11/OSC_Task.git
 cd git 
 mkdir task-2 
