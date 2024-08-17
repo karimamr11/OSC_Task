@@ -6,6 +6,7 @@ mkdir task-2
 cd task-2 
 touch greeting.txt
 echo hello world > greeting.txt
+cd ..
 git add task-2/greeting.txt 
 git commit -m "Added greeting"
 git checkout -b intro 
