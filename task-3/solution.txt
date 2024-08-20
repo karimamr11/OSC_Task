@@ -16,7 +16,7 @@ nano project_files/reports/report1.md
 nano project_files/logs/system.log
 nano project_files/data/data.csv
 cd project_files
-tar -cvf logs_backup.tar logs 
+tar -cvf logs_backup.tar -c logs* 
 cd logs 
 mv logs_backup.tar /home/osc/Desktop/project_files
 cd ..
@@ -36,6 +36,7 @@ date >>Desktop/project_files/summary.txt
 wc -l <Desktop/project_files/summary.txt | tee -a Desktop/project_files/summary.txt
 wc -w Desktop/project_files/reports/report1.md
 wc -c Desktop/project_files/logs/system.log >> Desktop/project_files/summary.txt
+find Desktop/project_files -type f -o -type d | wc -l >> Desktop/project_files/summary.txt
 cat Desktop/project_files/summary.txt
 
 
