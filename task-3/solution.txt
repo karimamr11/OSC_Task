@@ -36,6 +36,6 @@ date >>Desktop/project_files/summary.txt
 wc -l <Desktop/project_files/summary.txt | tee -a Desktop/project_files/summary.txt
 wc -w Desktop/project_files/reports/report1.md
 wc -c Desktop/project_files/logs/system.log >> Desktop/project_files/summary.txt
-find cat Desktop/project_files/summary.txt
+cat Desktop/project_files/summary.txt
 
 
