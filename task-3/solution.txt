@@ -10,17 +10,17 @@ touch system.log error.log file1.pdf file2.pdf
 cd ..
 cd data
 touch data.csv info.txt 
-cd --
+cd ~
 cd Desktop
 nano project_files/reports/report1.md
 nano project_files/logs/system.log
 nano project_files/data/data.csv
 cd project_files
-tar -cvf logs_backup.tar -c logs* 
+tar -cvf logs_backup.tar logs* 
 cd logs 
 mv logs_backup.tar /home/osc/Desktop/project_files
 cd ..
-tar -xvf logs_backup.tar logs
+tar -xvf logs_backup.tar -C logs
 cd
 find -name "*.md"
 find Desktop/project_files -name "*.log" 
