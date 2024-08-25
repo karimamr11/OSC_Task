@@ -1,0 +1,3 @@
+cut -d',' -f2 git/OSC_Task/task-5/info.csv | sort -u > git/OSC_Task/task-5/emails.txt
+ps -e -o pid,cmd --sort=cmd | tail -n +2 > git/OSC_Task/task-5/processes.txt
+
